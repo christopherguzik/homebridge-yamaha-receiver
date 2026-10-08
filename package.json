@@ -1,0 +1,56 @@
+{
+  "name": "homebridge-yamaha-receiver-scenes",
+  "description": "Homebridge plugin for Yamaha Audio Receivers with scene switches, zone-aware remote keys and better error handling (fork of homebridge-yamaha-receiver)",
+  "version": "0.4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge-yamaha-receiver",
+    "homebridge-yamaha",
+    "yamaha",
+    "rx-v675",
+    "scenes",
+    "multi-zone"
+  ],
+  "bugs": {
+    "url": "https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes/issues"
+  },
+  "engines": {
+    "node": "^22.10.0 || ^24.0.0",
+    "homebridge": "^1.8.0 || ^2.0.0"
+  },
+  "dependencies": {
+    "node-persist": "^4.0.4",
+    "yamaha-nodejs": "^0.9.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  },
+  "overrides": {
+    "xml2js": "^0.6.2",
+    "form-data": "^4.0.4",
+    "qs": "^6.14.1",
+    "tough-cookie": "^5.1.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "homepage": "https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes#readme",
+  "author": "Christopher Guzik",
+  "files": [
+    "index.js",
+    "accessories",
+    "lib",
+    "config.schema.json",
+    "config-sample.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "branding"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CD:22:3D:E3:CE:30",
+    "port": 51826,
+    "pin": "031-45-154"
+  },
+  "description": "This is an example configuration for homebridge-yamaha-receiver",
+  "platforms": [
+    {
+      "platform": "YamahaReceiver",
+      "discovery": true,
+      "debug": false,
+      "statePollingInterval": 10,
+      "receivers": [
+        {
+          "name": "Living",
+          "ip": "192.168.1.50",
+          "minVolume": -80,
+          "maxVolume": -10,
+          "volumeAccessory": "fan",
+          "partySwitch": false,
+          "directSwitch": true,
+          "sceneSwitches": true,
+          "scenes": [
+            {
+              "number": 1,
+              "name": "TV"
+            },
+            {
+              "number": 2,
+              "name": "Music"
+            },
+            {
+              "number": 3,
+              "name": "Movie"
+            },
+            {
+              "number": 4,
+              "name": "Alfresco"
+            }
+          ],
+          "enableZone2": true,
+          "zone2MinVolume": -60,
+          "zone2MaxVolume": -20
+        }
+      ]
+    }
+  ],
+  "accessories": []
+}
