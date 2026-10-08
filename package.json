@@ -4,7 +4,7 @@
   "version": "0.4.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes.git"
+    "url": "git+https://github.com/christopherguzik/homebridge-yamaha-receiver.git"
   },
   "license": "MIT",
   "keywords": [
@@ -17,7 +17,7 @@
     "multi-zone"
   ],
   "bugs": {
-    "url": "https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes/issues"
+    "url": "https://github.com/christopherguzik/homebridge-yamaha-receiver/issues"
   },
   "engines": {
     "node": "^22.10.0 || ^24.0.0",
@@ -40,7 +40,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "homepage": "https://github.com/christopherguzik/homebridge-yamaha-receiver-scenes#readme",
+  "homepage": "https://github.com/christopherguzik/homebridge-yamaha-receiver#readme",
   "author": "Christopher Guzik",
   "files": [
     "index.js",
