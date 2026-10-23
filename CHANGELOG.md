@@ -2,6 +2,11 @@
 
 This project is a fork of [homebridge-yamaha-receiver](https://github.com/nitaybz/homebridge-yamaha-receiver) by [@nitaybz](https://github.com/nitaybz) (MIT). Versions below 0.4.0 are the original project's.
 
+## 0.4.1
+
+### Added
+- `zone2VolumeAccessory` (`fan` or `bulb`): a volume slider accessory for Zone 2 only. It overrides `volumeAccessory` for Zone 2 when both are set.
+
 ## 0.4.0 (fork's first release, based on upstream 0.3.3)
 
 ### Added

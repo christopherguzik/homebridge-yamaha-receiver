@@ -18,7 +18,6 @@
           "ip": "192.168.1.50",
           "minVolume": -80,
           "maxVolume": -10,
-          "volumeAccessory": "fan",
           "partySwitch": false,
           "directSwitch": true,
           "sceneSwitches": true,
@@ -41,6 +40,7 @@
             }
           ],
           "enableZone2": true,
+          "zone2VolumeAccessory": "fan",
           "zone2MinVolume": -60,
           "zone2MaxVolume": -20
         }

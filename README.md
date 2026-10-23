@@ -8,7 +8,7 @@ Developed and tested against an **RX-V675** with Main Zone + Zone 2. Other Yamah
 
 ## What you get
 - Each zone (Main, Zone 2/3/4) appears as its own TV-style accessory: power, input, volume, mute and the Control Centre remote.
-- Optional fan/bulb accessory for a proper volume slider (`volumeAccessory`).
+- Optional fan/bulb volume slider for all zones (`volumeAccessory`), or Zone 2 only (`zone2VolumeAccessory`).
 - Optional **Party Mode** and **Pure Direct** switches.
 - **Scene switches** (new): a momentary switch per receiver SCENE preset.
 
@@ -32,7 +32,6 @@ npm install -g homebridge-yamaha-receiver-scenes
     {
       "name": "Living",
       "ip": "192.168.1.50",
-      "volumeAccessory": "fan",
       "directSwitch": true,
       "sceneSwitches": true,
       "scenes": [
@@ -42,12 +41,15 @@ npm install -g homebridge-yamaha-receiver-scenes
         { "number": 4, "name": "Alfresco" }
       ],
       "enableZone2": true,
+      "zone2VolumeAccessory": "fan",
       "zone2MinVolume": -60,
       "zone2MaxVolume": -20
     }
   ]
 }
 ```
+
+Set `zone2VolumeAccessory` to `"fan"` or `"bulb"` to add a volume slider for Zone 2 only. Leave `volumeAccessory` unset if you do not want a slider for the Main Zone. The Zone 2 option overrides `volumeAccessory` for Zone 2 when both are set.
 
 ### Scenes
 Set `sceneSwitches: true`. If `scenes` is omitted you get "Scene 1" to "Scene 4". Scenes are programmed on the receiver itself (SCENE button + front panel/AV Controller app); this plugin only recalls them. The switches are momentary: they flip back off after a second, and HomeKit can't show which scene is active. Recalling a scene powers the receiver on first.

@@ -132,6 +132,26 @@
               "minimum": -100,
               "maximum": 100
             },
+            "zone2VolumeAccessory": {
+              "title": "Zone 2 Volume Accessory",
+              "description": "Optional fan or light slider for Zone 2 only; overrides External Volume Accessory",
+              "type": "string",
+              "required": false,
+              "oneOf": [
+                {
+                  "title": "Fan",
+                  "enum": [
+                    "fan"
+                  ]
+                },
+                {
+                  "title": "Light Bulb",
+                  "enum": [
+                    "bulb"
+                  ]
+                }
+              ]
+            },
             "zone2MaxVolume": {
               "title": "Zone 2 Max Volume",
               "description": "Adjust if the maximum volume in HomeKit is too high or too low",
@@ -234,6 +254,7 @@
               "title": "Zone 2",
               "items": [
                 "receivers[].enableZone2",
+                "receivers[].zone2VolumeAccessory",
                 "receivers[].zone2MinVolume",
                 "receivers[].zone2MaxVolume"
               ]

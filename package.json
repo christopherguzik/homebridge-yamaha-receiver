@@ -1,7 +1,7 @@
 {
   "name": "homebridge-yamaha-receiver-scenes",
   "description": "Homebridge plugin for Yamaha Audio Receivers with scene switches, zone-aware remote keys and better error handling (fork of homebridge-yamaha-receiver)",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christopherguzik/homebridge-yamaha-receiver.git"
